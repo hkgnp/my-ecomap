@@ -72,6 +72,12 @@ const Map = (props: { resources: any[] }) => {
         className="absolute flex flex-col content-between text-right top-5 right-5"
         style={{ zIndex: "9999" }}
       >
+        <a
+          className="text-xs bg-red-600 py-1 px-0 mb-2 text-white text-center rounded"
+          href="mailto:my-ecomap@pngs.cc"
+        >
+          Report an error
+        </a>
         <InputEl map={map} updateMarkerObj={updateMarkerObj} />
         <div className="flex items-start justify-end mt-2">
           {categories.length < 3 && (
